@@ -14,6 +14,6 @@ import { AppComponent } from './app.component';
     EplatformlibModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
