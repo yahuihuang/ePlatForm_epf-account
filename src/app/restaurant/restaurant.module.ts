@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RestaurantComponent } from './restaurant.component';
 import { RouterModule, Routes } from "@angular/router";
 import { RestaurantDetailComponent } from './detail/detail.component';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -22,7 +23,8 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    FormsModule,
   ]
 })
 export class RestaurantModule { }
