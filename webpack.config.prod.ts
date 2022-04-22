@@ -4,7 +4,7 @@ import { Configuration } from 'webpack';
 export const prodWebpackConfig: Configuration = {
   ...webpackConfig,
   output: {
-    publicPath: 'http://127.0.0.1:82/', // production server,
+    publicPath: 'http://testepf.test.com.tw:82/', // production server,
     uniqueName: 'epfaccount',
   },
 };

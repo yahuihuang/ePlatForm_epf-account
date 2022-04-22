@@ -3,7 +3,7 @@ import dep from 'package.json';
 
 export const webpackConfig: Configuration = {
   output: {
-    publicPath: 'http://127.0.0.1:4202/',
+    publicPath: 'http://testepf.test.com.tw:4202/',
     uniqueName: 'restaurant',
   },
   experiments: {
