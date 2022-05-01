@@ -12,7 +12,7 @@ const routes: Routes = [
     path: 'order',
     loadChildren: () => mfe.loadRemoteFile({
       remoteName: "orders",
-      remoteEntry: `http://testepf.test.com.tw:4201/remoteOrders.js`,
+      remoteEntry: `https://epf-newpwd.web.app/remoteOrders.js`,
       exposedFile: "OrderModule",
       exposeFileType: FileType.Module
     }).then((m) => m.OrderModule),
@@ -21,7 +21,7 @@ const routes: Routes = [
     path: 'rootapps',
     loadChildren: () => mfe.loadRemoteFile({
       remoteName: "rootapp",
-      remoteEntry: `http://testepf.test.com.tw:4200/remoteRootapp.js`,
+      remoteEntry: `https://epf-rootapp.web.app/remoteRootapp.js`,
       exposedFile: "RootappModule",
       exposeFileType: FileType.Module
     }).then((m) => m.RootappModule),
