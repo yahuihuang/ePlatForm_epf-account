@@ -43,6 +43,13 @@ $Env:remoteEntry_rootapp = "http://127.0.0.1:4200/remoteRootapp.js"
 $Env:remoteentry_orders = "http://127.0.0.1:4201/remoteOrders.js"
 $Env:remoteentry_restaurant = "http://127.0.0.1:4202/remoteRestaurant.js"
 ng serve --host 127.0.0.1 --live-reload false --configuration development
+
+或指定domain
+$Env:publicpath = "http://testepf.test.com.tw:4202/"
+$Env:remoteEntry_rootapp = "http://testepf.test.com.tw:4200/remoteRootapp.js"
+$Env:remoteentry_orders = "http://testepf.test.com.tw:4201/remoteOrders.js"
+$Env:remoteentry_restaurant = "http://testepf.test.com.tw:4202/remoteRestaurant.js"
+ng serve --host testepf.test.com.tw --live-reload false --configuration development
 Ref. https://codinglatte.com/posts/angular/using-os-environment-variables-in-angular-with-docker/
 
 ## 佈署Firebase hosting
