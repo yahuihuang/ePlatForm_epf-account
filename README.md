@@ -26,6 +26,17 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+### 本機安裝
+npm install ..\angular-lib\dist\@ddggroup\angular-lib\ddggroup-angular-lib-0.0.3.tgz
+### 從GitLab下載
+#### 編輯 C:\Users\[user]\.npmrc
+#### 新增
+//gitlab.xxxx.com.tw:8088/api/v4/projects/31/packages/npm/:_authToken=[GitLab Token]
+//gitlab.xxxx.com.tw:8088/api/v4/packages/npm/:_authToken=[GitLab Token]
+@ddggroup:registry=http://gitlab.xxxx.com.tw:8088/api/v4/packages/npm/
+#### 執行
+npm install --save @ddggroup/angular-lib
+
 ## 設定環境變數
 $Env:publicpath = "http://127.0.0.1:4202/"
 $Env:remoteEntry_rootapp = "http://127.0.0.1:4200/remoteRootapp.js"
