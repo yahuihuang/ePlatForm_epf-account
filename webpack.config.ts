@@ -4,7 +4,7 @@ import dep from 'package.json';
 
 export const webpackConfig: Configuration = {
   output: {
-    publicPath: (process.env['publicpath'] == undefined) ? "https://epf-account.web.app/" : process.env['publicpath'],
+    publicPath: (process.env['publicpath'] == undefined) ? "http://testepf.test.com.tw:4202/" : process.env['publicpath'],
     uniqueName: 'restaurant',
   },
   experiments: {
@@ -16,9 +16,9 @@ export const webpackConfig: Configuration = {
   plugins: [
     new webpack.DefinePlugin({
       $ENV: {
-        remoteEntry_Rootapp: JSON.stringify((process.env['remoteEntry_rootapp'] == undefined) ? "https://epf-rootapp.web.app/remoteRootapp.js" : process.env['remoteEntry_rootapp']),
-        remoteEntry_Orders: JSON.stringify((process.env['remoteentry_orders'] == undefined) ? "https://epf-newpwd.web.app/remoteOrders.js" : process.env['remoteentry_orders']),
-        remoteEntry_Restaurant: JSON.stringify((process.env['remoteentry_restaurant'] == undefined) ? "https://epf-account.web.app/remoteRestaurant.js" : process.env['remoteentry_restaurant']),
+        remoteEntry_Rootapp: JSON.stringify((process.env['remoteEntry_rootapp'] == undefined) ? "http://testepf.test.com.tw:4200/remoteRootapp.js" : process.env['remoteEntry_rootapp']),
+        remoteEntry_Orders: JSON.stringify((process.env['remoteentry_orders'] == undefined) ? "http://testepf.test.com.tw:4201/remoteOrders.js" : process.env['remoteentry_orders']),
+        remoteEntry_Restaurant: JSON.stringify((process.env['remoteentry_restaurant'] == undefined) ? "http://testepf.test.com.tw:4202/remoteRestaurant.js" : process.env['remoteentry_restaurant']),
       }
     }),
     new container.ModuleFederationPlugin({
