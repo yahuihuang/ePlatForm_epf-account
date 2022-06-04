@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host 127.0.0.1 --live-reload false --configuration development",
-    "start_host": "ng serve --host testepf.test.com.tw --live-reload false --configuration development",
+    "start_host": "ng serve --host testepf.test.com.tw --live-reload false --configuration development --disable-host-check",
     "build": "ng build --configuration development",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
